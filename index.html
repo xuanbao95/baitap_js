@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h1 class="h1-title">
+            bài tập vé xem phim
+        </h1>
+        <label>tên phim :</label>
+        <input id="phim" type="text" value="phim">
+        <div class="case">
+            <label>Giá vé người lớn:</label>
+            <input id="num_1" type="number" value="45000">
+            <br>
+            <label>Số vé người lớn đã bán: </label>
+            <input id="veLon" type="number" placeholder="number">
+        </div>
+        <div class="case">
+            <label>Giá vé trẻ em:</label>
+            <input id="num_2" type="number" value="40000">
+            <br>
+            <label>Số vé trẻ em đã bán: </label>
+            <input id="veTre" type="number" placeholder="number">
+        </div>
+        <button onclick="demoDoanhThu()">Doanh thu</button>
+        <p>Tổng số tiền quyên góp được: <span id="ketQua" class="d-none"></span></p>
+    </section>
+    <section>
+        <h1>Bài tập 1</h1>
+        <div>
+            <label>lương 1 ngày</label>
+            <input id="luong" type="number" value="100000">
+            <br>
+            <label>Số ngày làm:</label>
+            <input id="ngayLam" type="number" placeholder="number">
+            <button onclick="tinhLuong()">Suất</button>
+            <br>
+            <span>Lương : </span><span id="pKetQua" class="d-none"></span>
+        </div>
+    </section>
+    <section>
+        <h1>Bài tập 2</h1>
+        <div>
+            <label>Số thực 1</label>
+            <input id="so_1" type="number" placeholder="number">
+            <br>
+            <label>Số thực 2</label>
+            <input id="so_2" type="number" placeholder="number">
+            <br>
+            <label>Số thực 3</label>
+            <input id="so_3" type="number" placeholder="number">
+            <br>
+            <label>Số thực 4</label>
+            <input id="so_4" type="number" placeholder="number">
+            <br>
+            <label>Số thực 5</label>
+            <input id="so_5" type="number" placeholder="number">
+        </div>
+        <button onclick="soThuc()">Đáp án</button>
+        <br>
+        <span>Trung bình cộng 5 số:</span>
+        <span id="baiTap_2" class="d-none"></span>
+    </section>
+    <section>
+        <h1>bài tập 3</h1>
+        <div>
+            <label>1 usd :</label>
+            <input id="usd" type="number" value="23500">
+            <label>usd cần quy đổi :</label>
+            <input id="quyDoi" type="number" placeholder="number">
+        </div>
+        <button onclick="usdQuyDoi()">Quy đổi</button>
+        <br>
+        <span>Tiền vnd:</span>
+        <span id="baiTap_3" class="d-none"></span>
+    </section>
+    <section>
+        <h1>bào tập 4</h1>
+        <div>
+            <label>chiều dài :</label>
+            <input id="chieuDai" type="number" placeholder="number">
+            <label>chiều rộng :</label>
+            <input id="chieuRong" type="number" placeholder="number">
+        </div>
+        <button onclick="chuVi()">chu vi</button>
+        <button onclick="dienTich()">dien tich</button>
+        <br>
+        <span>Chu vi:</span>
+        <span id="chuVi" class="d-none"></span>
+        <br>
+        <span>Diện tích:</span>
+        <span id="dienTich" class="d-none"></span>
+    </section>
+    <section>
+        <h1>bài tâp 5</h1>
+        <div>
+            <label>nhập 1 số :</label>
+            <input id="kySo" type="number" placeholder="number">
+        </div>
+        <button onclick="kySo()">Suất ra</button>
+        <br>
+        <span>Tổng 2 ký số:</span>
+        <span id="tongKySo" class="d-none"></span>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

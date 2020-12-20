@@ -1,0 +1,13 @@
+.h1-title{
+    text-align: center;
+    font-size: 2rem;
+    color: orange;
+    border-bottom: 2px solid red;
+    text-transform: uppercase;
+}
+.case{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
